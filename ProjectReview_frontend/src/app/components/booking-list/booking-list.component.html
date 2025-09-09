@@ -1,0 +1,42 @@
+<app-nav-bar></app-nav-bar>
+<div class="heading-holder">
+  <h3 style="color:darkred;margin-top: 20px;">Booking Details</h3>
+  <app-search (sendSearchData)="getSearchData($event)"></app-search>
+  <div class="newTable">
+    <table class="table table-striped table-dark table-hover" id="myTable">
+      <thead>
+        <tr>
+          <th>Booking ID</th>
+          <th>CustomerName</th>
+          <th>PhnNo</th>
+          <th>Age</th>
+          <th>Email</th>
+          <th>Seats</th>
+          <th>MovieName</th>
+          <th>TimeSlot</th>
+          <th>BookingDate</th>
+          <th>Price</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <div class="button-holder">
+    <button (click)="verify()" class="btn btn-info">Verify</button>
+    <button
+      (click)="updateBooking()"
+      class="btn btn-success"
+      style="margin-left: 5px"
+    >
+      update
+    </button>
+    <button
+      (click)="deleteBooking()"
+      class="btn btn-danger"
+      style="margin-left: 5px"
+    >
+      Delete
+    </button>
+  </div>
+</div>

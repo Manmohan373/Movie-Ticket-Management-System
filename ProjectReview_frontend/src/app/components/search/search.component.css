@@ -1,0 +1,36 @@
+  
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  .date {
+    position: absolute;
+    margin-top: 10px;
+    width: 25%;
+    height: 8%;
+    right: 16%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  .search-input {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 10px;
+  }
+  .search-btn,
+  .clear-btn {
+    white-space: nowrap;
+  }
+  .status {
+    position: absolute;
+    margin-top: 10px;
+    width: 15%;
+    right: 0%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }
+ 

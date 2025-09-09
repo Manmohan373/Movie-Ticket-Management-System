@@ -1,0 +1,27 @@
+# Angular frontend
+/ProjectReview_frontend/node_modules
+/ProjectReview_frontend/dist
+/ProjectReview_frontend/.angular
+/ProjectReview_frontend/.cache
+/ProjectReview_frontend/package-lock.json
+
+# Spring Boot backend
+/ProjectReview_back_end/target
+/ProjectReview_back_end/.idea
+/ProjectReview_back_end/*.iml
+/ProjectReview_back_end/.classpath
+/ProjectReview_back_end/.project
+/ProjectReview_back_end/.settings
+
+# IDE junk
+**/.metadata
+**/.classpath
+**/.project
+**/.settings
+
+# Logs
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db

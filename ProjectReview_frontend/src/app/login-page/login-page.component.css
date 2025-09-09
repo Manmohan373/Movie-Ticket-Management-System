@@ -1,0 +1,28 @@
+.card-body {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: aliceblue;
+  }
+  .back-color {
+    position: absolute;
+    background-color: rgb(2, 29, 76);
+    width: 100%;
+    height: 100%;
+  }
+  .login-card {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 10%;
+    background-color: rgba(10, 44, 74, 0.019);
+    border: none;
+  }
+  label{
+    color: white;
+  }
+  input{
+    background-color: #ffffff8b;
+  }
+  .btn-color{
+    background: linear-gradient(135deg, rgb(82, 229, 231) 10%, rgb(19, 12, 183) 100%);
+    background-repeat: no-repeat;
+    color: white;
+  }

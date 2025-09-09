@@ -1,0 +1,46 @@
+<div class="back-color">
+    <div class="card login-card">
+      <h4 style="text-align: left; color: rgb(255, 255, 255); margin-bottom: 55px;">
+          You can login here
+        </h4>
+      <div class="">
+        <form (ngSubmit)="onSubmit()">
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input
+              (click)="removeUserValidation()"
+              type="text"
+              class="form-control"
+              id="username"
+              name="username"
+              [(ngModel)]="user.username"
+            />
+            <small class="text-danger" style="position: absolute; font-style: italic;">{{ userValidation }}</small>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="{{ passwordType }}"
+              class="form-control"
+              id="password"
+              name="password"
+              [(ngModel)]="user.password"
+            />
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="myCheckbox"
+                (click)="change()"
+              />
+              <label class="form-check-label" for="myCheckbox"
+                >Show your password</label
+              >
+            </div>
+          </div>
+          <button type="submit" class="btn btn-color w-100 my-4">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  

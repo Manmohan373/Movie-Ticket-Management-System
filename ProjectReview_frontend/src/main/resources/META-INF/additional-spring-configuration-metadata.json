@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "keycloak.token.url",
+    "type": "java.lang.String",
+    "description": "A description for 'keycloak.token.url'"
+  },
+  {
+    "name": "keycloak.token.grantType",
+    "type": "java.lang.String",
+    "description": "A description for 'keycloak.token.grantType'"
+  },
+  {
+    "name": "keycloak.token.clientId",
+    "type": "java.lang.String",
+    "description": "A description for 'keycloak.token.clientId'"
+  },
+  {
+    "name": "keycloak.token.clientSecret",
+    "type": "java.lang.String",
+    "description": "A description for 'keycloak.token.clientSecret'"
+  }
+]}

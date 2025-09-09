@@ -1,0 +1,166 @@
+<app-nav-bar></app-nav-bar>
+<div
+  class="container"
+  style="
+    background-color: antiquewhite;
+    margin-top: 1%;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+      rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  "
+>
+  <h3 style="color: darkcyan">Ticket Booking Page</h3>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="bookingId">bookingId</label>
+      <input
+        (click)="removeValidationBookingId()"
+        type="text"
+        id="bookingId"
+        name="bookingId"
+        class="form-control"
+        [(ngModel)]="booking.bookingId"
+      />
+      <span style="color: red">{{ validBookingId }}</span>
+    </div>
+    <div class="form-group">
+      <label for="customerName">Customer name</label>
+      <input
+        (click)="removeValidationCustomerName()"
+        type="text"
+        id="customerName"
+        name="customerName"
+        class="form-control"
+        [(ngModel)]="booking.customerName"
+      />
+      <span style="color: red">{{ validCustomerName }}</span>
+    </div>
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label for="age">age</label>
+        <input
+          (click)="removeValidationAge()"
+          type="number"
+          id="age"
+          name="age"
+          class="form-control"
+          [(ngModel)]="booking.age"
+        />
+        <span style="color: red">{{ validAge }}</span>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="phnNo">phnNo:</label>
+        <input
+          (click)="removeValidationPhnNo()"
+          type="text"
+          id="phnNo"
+          name="phnNo"
+          class="form-control"
+          [(ngModel)]="booking.phnNo"
+        />
+        <span style="color: red">{{ validPhnNo }}</span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input
+        (click)="removeValidationEmail()"
+        type="text"
+        id="email"
+        name="email"
+        class="form-control"
+        [(ngModel)]="booking.email"
+      />
+      <span style="color: red">{{ validEmail }}</span>
+    </div>
+
+    <div class="form-group">
+      <label for="movieName">Movie Name:</label>
+      <input
+        (click)="removeValidationMovieName()"
+        type="text"
+        id="movieName"
+        name="movieName"
+        class="form-control"
+        [(ngModel)]="booking.movieName"
+      />
+      <span style="color: red">{{ validMovieName }}</span>
+    </div>
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label for="seats">Seats:</label>
+        <input
+          (click)="removeValidationSeats()"
+          type="number"
+          id="seats"
+          name="seats"
+          class="form-control"
+          [(ngModel)]="booking.seats"
+        />
+        <span style="color: red">{{ validSeats }}</span>
+      </div>
+      <div class="form-group col-md-5">
+        <label>timeSlot</label>
+        <select
+          (change)="onCourseSelect($event)"
+          class="form-control w-75 mx-1"
+          id="timeSlot"
+          placeholder="timeSlot"
+          [(ngModel)]="booking.timeSlot"
+          name="timeSlot"
+        >
+          <option value="" disabled selected>search timeSlots</option>
+          <option
+            *ngFor="let timeSlot of timeSlots"
+            [value]="timeSlot.timeSlots"
+          >
+            {{ timeSlot.timeSlots }}
+          </option>
+        </select>
+        <span style="color: red">{{ validTimeSlot }}</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label for="bookingDate">Booking Date:</label>
+        <input
+          type="date"
+          id="bookingDate"
+          name="bookingDate"
+          class="form-control"
+          [(ngModel)]="booking.bookingDate"
+        />
+        <span style="color: red">{{ validBookingDate }}</span>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="Price">Price:</label>
+        <input
+          (click)="removeValidationPrice()"
+          (click)="getPrice()"
+          type="number"
+          id="Price"
+          name="Price"
+          class="form-control"
+          [(ngModel)]="booking.price"
+          [readOnly]="true"
+        />
+        <span style="color: red">{{ validPrice }}</span>
+      </div>
+    </div>
+
+    <br />
+    <button class="btn btn-success" type="submit" style="margin-left: 68%">
+      register
+    </button>
+
+    <button
+      class="btn btn-danger"
+      (click)="goToBookingList()"
+      style="margin-left: 10px"
+    >
+      back
+    </button>
+  </form>
+  <br />
+</div>

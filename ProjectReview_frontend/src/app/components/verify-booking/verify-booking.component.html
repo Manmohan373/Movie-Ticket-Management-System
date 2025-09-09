@@ -1,0 +1,52 @@
+<app-nav-bar></app-nav-bar>
+<h3 style="text-align: center; color: teal">booking Details</h3>
+<div class="booking-details-container">
+  <div class="booking-detail">
+    <label for="bookingId">booking ID:</label>
+    <span id="bookingId">{{ booking.bookingId }}</span>
+  </div>
+  <div class="booking-detail">
+    <label for="customerName">customerName:</label>
+    <span id="customerName">{{ booking.customerName }}</span>
+  </div>
+  <div class="booking-detail">
+    <label for="phnNo">phnNo:</label>
+    <span id="phnNo">{{ booking.phnNo }}</span>
+  </div>
+  <div class="booking-detail">
+    <label for="email">Email:</label>
+    <span id="email">{{ booking.email }}</span>
+  </div>
+  <div class="booking-detail">
+    <label for="age">Age:</label>
+    <span id="age">{{ booking.age }}</span>
+  </div>
+  <div class="booking-detail">
+    <label for="movieName">movieName:</label>
+    <span id="movieName">{{ booking.movieName }}</span>
+  </div>
+  <div class="booking-detail">
+    <label for="timeSlot">timeSlot:</label>
+    <span id="timeSlot">{{ booking.timeSlot }}</span>
+  </div>
+  <div class="booking-detail">
+    <label for="bookingDate">bookingDate:</label>
+    <span id="bookingDate">{{ booking.bookingDate }}</span>
+  </div>
+   <div class="booking-detail">
+    <label for="price">price:</label>
+    <span id="price">{{ booking.price }}</span>
+  </div>
+  <div class="booking-detail">
+    <label for="status">Status:</label>
+    <span id="status">{{ booking.status }}</span>
+  </div>
+</div>
+<div style="text-align: center">
+    <button (click)="verifyBooking()" class="btn btn-success">
+        Verify
+      </button>
+  <button (click)="goToBookingList()" style="margin-left: 1%;" class="btn btn-danger">
+    Back
+  </button>
+</div>

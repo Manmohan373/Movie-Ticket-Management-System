@@ -1,0 +1,35 @@
+th {
+    background-color: bisque;
+    font-size: large;
+    color: black;
+    position: sticky;
+    top: 0%;
+  }
+  .head {
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+  .newTable {
+    position: absolute;
+    height: 65%;
+    width: 90%;
+    overflow-y: scroll;
+    right: 5%;
+  }
+
+  .heading-holder {
+    width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button-holder {
+    position: absolute;
+    bottom: 1%;
+    right: 5%;
+  }
+  .newTable::-webkit-scrollbar {
+    display: none;
+  }
+
+  

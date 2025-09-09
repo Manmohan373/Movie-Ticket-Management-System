@@ -1,0 +1,74 @@
+<div class="search">
+    <input
+      class="form-control w-75 mx-2"
+      type="search"
+      placeholder="Enter id"
+      [(ngModel)]="searchId"
+      name="searchId"
+    />
+    <input
+      class="form-control w-75 mx-2"
+      type="search"
+      placeholder="Enter name"
+      [(ngModel)]="searchName"
+      name="searchName"
+    />
+    <input
+    class="form-control w-75 mx-2"
+    type="search"
+    placeholder="Enter phnNo"
+    [(ngModel)]="searchPhnNo"
+    name="searchPhnNo"
+  />
+  <select
+        (change)="onCourseSelect($event)"
+        class="form-control w-75 mx-2"
+        id="timeSlot"
+        placeholder="timeSlot"
+        [(ngModel)]="searchTimeSlot"
+        name="timeSlot"
+      >
+        <option value="" disabled selected>search timeSlots</option>
+        <option
+          *ngFor="let timeSlot of timeSlots"
+          [value]="timeSlot.timeSlots"
+        >
+          {{ timeSlot.timeSlots }}
+        </option>
+      </select>
+    <!-- <input
+      class="form-control w-75 mx-2"
+      type="date"
+      id="start"
+      [(ngModel)]="startDate"
+    />
+    <label for="end" class="my-2">To</label>
+    <input
+      class="form-control w-75 mx-2"
+      type="date"
+      id="end"
+      [(ngModel)]="endDate"
+    /> -->
+    <input type="text" class="form-control w-76 mx-2" id="dateRangePicker" />
+    <select
+      class="form-control w-75 mx-2"
+      type="search"
+      [(ngModel)]="searchStatus"
+      name="searchStatus"
+      style="color: black"
+    >
+      <option value="" disabled selected>search status</option>
+      <option value="processing">processing</option>
+      <option value="booked">booked</option>
+      <option value="canceled">Canceled</option>
+      <option value="DELETED">DELETED</option>
+    </select>
+    <button
+      (click)="onSubmit()"
+      class="btn btn-success search-btn m-2 text-light"
+    >
+      Search
+    </button>
+    <button (click)="clear()" class="btn btn-warning clear-btn m-2">Clear</button>
+  </div>
+  
