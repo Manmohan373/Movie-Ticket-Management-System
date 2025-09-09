@@ -1,10 +1,10 @@
-🎬 Movie Ticket Management System
+# 🎬 Movie Ticket Management System
 
 A full-stack Movie Ticket Management System built with Spring Boot (Backend) and Angular (Frontend).
 This project allows users to book, view, update, and cancel movie tickets with authentication and role-based access.
 
-🚀 Tech Stack
-🔹 Backend (Spring Boot)
+## 🚀 Tech Stack
+## 🔹 Backend (Spring Boot)
 
 Java 17+
 
@@ -18,7 +18,7 @@ MySQL (or any relational DB)
 
 Maven
 
-🔹 Frontend (Angular)
+## 🔹 Frontend (Angular)
 
 Angular
 
@@ -28,7 +28,7 @@ HTML / CSS
 
 Bootstrap
 
-✨ Features
+## ✨ Features
 
 ✔️ User Registration & Login (Authentication)
 ✔️ Book Movie Tickets with Time Slots
@@ -38,7 +38,7 @@ Bootstrap
 ✔️ Exception Handling & Validation
 ✔️ Secure REST APIs with JWT (if implemented)
 
-📂 Project Structure
+## 📂 Project Structure
 Movie_Ticket_Management_System/
 │
 ├── ProjectReview_back_end/    # Spring Boot Backend
@@ -51,8 +51,8 @@ Movie_Ticket_Management_System/
     ├── package.json           # NPM dependencies
     └── angular.json           # Angular config
 
-⚡ Getting Started
-🖥 Backend (Spring Boot)
+## ⚡ Getting Started
+## 🖥 Backend (Spring Boot)
 
 Go to the backend folder:
 
@@ -74,7 +74,7 @@ mvn spring-boot:run
 
 Backend will start on 👉 http://localhost:8080
 
-🌐 Frontend (Angular)
+## 🌐 Frontend (Angular)
 
 Go to the frontend folder:
 
@@ -93,7 +93,7 @@ ng serve
 
 Frontend will start on 👉 http://localhost:4200
 
-📸 Screenshots (Optional)
+## 📸 Screenshots (Optional)
 
 LOGIN SCREEN
 
